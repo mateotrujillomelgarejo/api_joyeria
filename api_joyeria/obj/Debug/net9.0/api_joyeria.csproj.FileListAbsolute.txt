@@ -171,3 +171,4 @@ C:\Users\User\Downloads\Proyecto EFSRT\Joyeria\api_joyeria\bin\Debug\net9.0\tr\M
 C:\Users\User\Downloads\Proyecto EFSRT\Joyeria\api_joyeria\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 C:\Users\User\Downloads\Proyecto EFSRT\Joyeria\api_joyeria\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 C:\Users\User\Downloads\Proyecto EFSRT\Joyeria\api_joyeria\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\User\Downloads\Proyecto EFSRT\Joyeria\api_joyeria\obj\Debug\net9.0\api_joyeria.sourcelink.json

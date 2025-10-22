@@ -20,38 +20,38 @@ namespace api_joyeria.Controllers
         public async Task<IActionResult> GetAll()
         {
             var data = await _service.GetAllAsync();
-            return Ok(new ApiResponse<object> { Success = true, Data = data });
+            return Ok(data);
         }
 
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
             var data = await _service.GetByIdAsync(id);
-            if (data == null) return NotFound(new ApiResponse<string> { Success = false, Message = "Producto no encontrado" });
-            return Ok(new ApiResponse<object> { Success = true, Data = data });
+            if (data == null) return NotFound("Producto no encontrado");
+            return Ok(data);
         }
 
         [HttpPost]
         public async Task<IActionResult> Create([FromBody] ProductoRequest request)
         {
             var data = await _service.CreateAsync(request);
-            return CreatedAtAction(nameof(GetById), new { id = data.Id }, new ApiResponse<object> { Success = true, Data = data });
+            return CreatedAtAction(nameof(GetById), new { id = data.Id }, data );
         }
 
         [HttpPut("{id}")]
         public async Task<IActionResult> Update(int id, [FromBody] ProductoRequest request)
         {
             var data = await _service.UpdateAsync(id, request);
-            if (data == null) return NotFound(new ApiResponse<string> { Success = false, Message = "Producto no encontrado" });
-            return Ok(new ApiResponse<object> { Success = true, Data = data });
+            if (data == null) return NotFound("Producto no encontrado");
+            return Ok(data);
         }
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
             var result = await _service.DeleteAsync(id);
-            if (!result) return NotFound(new ApiResponse<string> { Success = false, Message = "Producto no encontrado" });
-            return Ok(new ApiResponse<string> { Success = true, Message = "Producto eliminado correctamente" });
+            if (!result) return NotFound("Producto no encontrado");
+            return Ok("Producto eliminado correctamente");
         }
     }
 }

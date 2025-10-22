@@ -24,7 +24,7 @@ namespace api_joyeria.Controllers
         {
             var cliente = await _clienteService.ValidateCredentialsAsync(request.Email, request.Password);
             if (cliente == null)
-                return Unauthorized(new ApiResponse<string> { Success = false, Message = "Credenciales inválidas" });
+                return Unauthorized("Credenciales inválidas");
 
             var token = _jwtHelper.GenerateToken(new Models.Cliente
             {
@@ -33,12 +33,7 @@ namespace api_joyeria.Controllers
                 Nombre = cliente.Nombre
             });
 
-            return Ok(new ApiResponse<object>
-            {
-                Success = true,
-                Message = "Inicio de sesión correcto",
-                Data = new { token, cliente }
-            });
+            return Ok(new{token, cliente});
         }
 
         [HttpPost("register")]
@@ -47,11 +42,11 @@ namespace api_joyeria.Controllers
             try
             {
                 var nuevo = await _clienteService.RegisterAsync(request);
-                return Ok(new ApiResponse<object> { Success = true, Data = nuevo });
+                return Ok(nuevo);
             }
             catch (Exception ex)
             {
-                return BadRequest(new ApiResponse<string> { Success = false, Message = ex.Message });
+                return BadRequest(ex.Message);
             }
         }
 

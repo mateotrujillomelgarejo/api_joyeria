@@ -4,6 +4,7 @@ using api_joyeria.Data.IService;
 using api_joyeria.DTOs.Requests;
 using api_joyeria.DTOs.Responses;
 using api_joyeria.Models;
+using api_joyeria.Data;
 
 namespace api_joyeria.Data.Service
 {
@@ -13,13 +14,15 @@ namespace api_joyeria.Data.Service
         private readonly IProductoRepository _productoRepo;
         private readonly IClienteRepository _clienteRepo;
         private readonly IMapper _mapper;
+        private readonly JoyeriaDbContext _context;
 
-        public PedidoService(IPedidoRepository pedidoRepo, IProductoRepository productoRepo, IClienteRepository clienteRepo, IMapper mapper)
+        public PedidoService(IPedidoRepository pedidoRepo, IProductoRepository productoRepo, IClienteRepository clienteRepo, IMapper mapper, JoyeriaDbContext context)
         {
             _pedidoRepo = pedidoRepo;
             _productoRepo = productoRepo;
             _clienteRepo = clienteRepo;
             _mapper = mapper;
+            _context = context;
         }
 
         public async Task<PedidoResponse> CreateAsync(PedidoRequest request)
@@ -34,44 +37,59 @@ namespace api_joyeria.Data.Service
             decimal total = 0;
             var detalles = new List<DetallePedido>();
 
-            for (int i = 0; i < request.ProductosIds.Count; i++)
+            using (var transaction = await _context.Database.BeginTransactionAsync())
             {
-                var producto = await _productoRepo.GetByIdAsync(request.ProductosIds[i]);
-                if (producto == null)
-                    throw new Exception($"Producto con ID {request.ProductosIds[i]} no encontrado.");
-
-                if (producto.Stock < request.Cantidades[i])
-                    throw new Exception($"Stock insuficiente para el producto {producto.Nombre}.");
-
-                decimal precioUnitario = producto.Precio;
-                decimal subtotal = precioUnitario * request.Cantidades[i];
-                total += subtotal;
-
-                detalles.Add(new DetallePedido
+                try
                 {
-                    ProductoId = producto.Id,
-                    Cantidad = request.Cantidades[i],
-                    PrecioUnitario = precioUnitario
-                });
+                    for (int i = 0; i < request.ProductosIds.Count; i++)
+                    {
+                        var producto = await _productoRepo.GetByIdAsync(request.ProductosIds[i]);
+                        if (producto == null)
+                            throw new Exception($"Producto con ID {request.ProductosIds[i]} no encontrado.");
 
-                producto.Stock -= request.Cantidades[i];
-                await _productoRepo.UpdateAsync(producto);
+                        if (producto.Stock < request.Cantidades[i])
+                            throw new Exception($"Stock insuficiente para el producto {producto.Nombre}.");
+
+                        decimal precioUnitario = producto.Precio;
+                        decimal subtotal = precioUnitario * request.Cantidades[i];
+                        total += subtotal;
+
+                        detalles.Add(new DetallePedido
+                        {
+                            ProductoId = producto.Id,
+                            Cantidad = request.Cantidades[i],
+                            PrecioUnitario = precioUnitario
+                        });
+
+                        producto.Stock -= request.Cantidades[i];
+
+                        await _productoRepo.UpdateAsync(producto);
+                    }
+
+                    var pedido = new Pedido
+                    {
+                        ClienteId = request.ClienteId,
+                        Cliente = cliente,
+                        FechaPedido = DateTime.Now,
+                        Total = total,
+                        Estado = "Pendiente",
+                        Detalles = detalles
+                    };
+
+                    await _pedidoRepo.AddAsync(pedido);
+                    await _pedidoRepo.SaveAsync();
+
+
+                    await transaction.CommitAsync();
+
+                    return _mapper.Map<PedidoResponse>(pedido);
+                }
+                catch
+                {
+                    await transaction.RollbackAsync();
+                    throw;
+                }
             }
-
-            var pedido = new Pedido
-            {
-                ClienteId = request.ClienteId,
-                Cliente = cliente,
-                FechaPedido = DateTime.Now,
-                Total = total,
-                Detalles = detalles
-            };
-
-            await _pedidoRepo.AddAsync(pedido);
-            await _pedidoRepo.SaveAsync();
-
-            var response = _mapper.Map<PedidoResponse>(pedido);
-            return response;
         }
 
         public async Task<IEnumerable<PedidoResponse>> GetAllAsync()

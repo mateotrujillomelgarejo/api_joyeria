@@ -20,7 +20,7 @@ namespace api_joyeria.Controllers
         public async Task<IActionResult> GetAll()
         {
             var pedidos = await _service.GetAllAsync();
-            return Ok(new ApiResponse<object> { Success = true, Data = pedidos });
+            return Ok(pedidos);
         }
 
         [HttpGet("{id}")]
@@ -28,9 +28,9 @@ namespace api_joyeria.Controllers
         {
             var pedido = await _service.GetByIdAsync(id);
             if (pedido == null)
-                return NotFound(new ApiResponse<string> { Success = false, Message = "Pedido no encontrado" });
+                return NotFound("Pedido no encontrado");
 
-            return Ok(new ApiResponse<object> { Success = true, Data = pedido });
+            return Ok(pedido);
         }
 
         [HttpPost]
@@ -39,11 +39,11 @@ namespace api_joyeria.Controllers
             try
             {
                 var nuevo = await _service.CreateAsync(request);
-                return Ok(new ApiResponse<object> { Success = true, Data = nuevo });
+                return Ok(nuevo);
             }
             catch (Exception ex)
             {
-                return BadRequest(new ApiResponse<string> { Success = false, Message = ex.Message });
+                return BadRequest(ex.Message);
             }
         }
     }

@@ -1,7 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using api_joyeria.Data.IService;
+﻿using api_joyeria.Data.IService;
 using api_joyeria.DTOs.Requests;
-using api_joyeria.DTOs.Shared;
+using Microsoft.AspNetCore.Mvc;
 
 namespace api_joyeria.Controllers
 {
@@ -20,7 +19,7 @@ namespace api_joyeria.Controllers
         public async Task<IActionResult> GetAll()
         {
             var clientes = await _service.GetAllAsync();
-            return Ok(new ApiResponse<object> { Success = true, Data = clientes });
+            return Ok(clientes);
         }
 
         [HttpGet("{id}")]
@@ -28,9 +27,9 @@ namespace api_joyeria.Controllers
         {
             var cliente = await _service.GetByIdAsync(id);
             if (cliente == null)
-                return NotFound(new ApiResponse<string> { Success = false, Message = "Cliente no encontrado" });
+                return NotFound("Cliente no encontrado");
 
-            return Ok(new ApiResponse<object> { Success = true, Data = cliente });
+            return Ok(cliente);
         }
 
         [HttpPut("{id}")]
@@ -38,9 +37,9 @@ namespace api_joyeria.Controllers
         {
             var actualizado = await _service.UpdateAsync(id, request);
             if (actualizado == null)
-                return NotFound(new ApiResponse<string> { Success = false, Message = "Cliente no encontrado" });
+                return NotFound("Cliente no encontrado");
 
-            return Ok(new ApiResponse<object> { Success = true, Data = actualizado });
+            return Ok(actualizado);
         }
 
         [HttpDelete("{id}")]
@@ -48,9 +47,9 @@ namespace api_joyeria.Controllers
         {
             var ok = await _service.DeleteAsync(id);
             if (!ok)
-                return NotFound(new ApiResponse<string> { Success = false, Message = "Cliente no encontrado" });
+                return NotFound("Cliente no encontrado");
 
-            return Ok(new ApiResponse<string> { Success = true, Message = "Cliente eliminado correctamente" });
+            return Ok("Cliente eliminado correctamente");
         }
     }
 }
