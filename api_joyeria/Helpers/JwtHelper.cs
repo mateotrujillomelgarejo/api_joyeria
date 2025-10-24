@@ -17,7 +17,8 @@ namespace api_joyeria.Helpers
             {
                 new Claim(JwtRegisteredClaimNames.Sub, cliente.Id.ToString()),
                 new Claim(JwtRegisteredClaimNames.Email, cliente.Email),
-                new Claim("nombre", cliente.Nombre)
+                new Claim("nombre", cliente.Nombre),
+                new Claim("esAdmin", cliente.EsAdmin.ToString())//nuevo apartado para ver si es admin
             };
 
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["Jwt:Key"]!));

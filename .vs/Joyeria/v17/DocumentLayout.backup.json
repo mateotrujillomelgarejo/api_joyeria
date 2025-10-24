@@ -1,363 +1,190 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\User\\Downloads\\Proyecto EFSRT\\Joyeria\\",
+  "WorkspaceRootPath": "D:\\EFSRT 4\\apiNueva\\api_joyeria\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{53047D03-B18F-4284-9C7A-B2B02A7D8075}|api_joyeria\\api_joyeria.csproj|c:\\users\\user\\downloads\\proyecto efsrt\\joyeria\\api_joyeria\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{53047D03-B18F-4284-9C7A-B2B02A7D8075}|api_joyeria\\api_joyeria.csproj|solutionrelative:api_joyeria\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{53047D03-B18F-4284-9C7A-B2B02A7D8075}|api_joyeria\\api_joyeria.csproj|d:\\efsrt 4\\apinueva\\api_joyeria\\api_joyeria\\dtos\\responses\\pedidoresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53047D03-B18F-4284-9C7A-B2B02A7D8075}|api_joyeria\\api_joyeria.csproj|solutionrelative:api_joyeria\\dtos\\responses\\pedidoresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{53047D03-B18F-4284-9C7A-B2B02A7D8075}|api_joyeria\\api_joyeria.csproj|c:\\users\\user\\downloads\\proyecto efsrt\\joyeria\\api_joyeria\\data\\joyeriadbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{53047D03-B18F-4284-9C7A-B2B02A7D8075}|api_joyeria\\api_joyeria.csproj|solutionrelative:api_joyeria\\data\\joyeriadbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{53047D03-B18F-4284-9C7A-B2B02A7D8075}|api_joyeria\\api_joyeria.csproj|c:\\users\\user\\downloads\\proyecto efsrt\\joyeria\\api_joyeria\\data\\service\\productoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{53047D03-B18F-4284-9C7A-B2B02A7D8075}|api_joyeria\\api_joyeria.csproj|solutionrelative:api_joyeria\\data\\service\\productoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{53047D03-B18F-4284-9C7A-B2B02A7D8075}|api_joyeria\\api_joyeria.csproj|c:\\users\\user\\downloads\\proyecto efsrt\\joyeria\\api_joyeria\\data\\repository\\productorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{53047D03-B18F-4284-9C7A-B2B02A7D8075}|api_joyeria\\api_joyeria.csproj|solutionrelative:api_joyeria\\data\\repository\\productorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{53047D03-B18F-4284-9C7A-B2B02A7D8075}|api_joyeria\\api_joyeria.csproj|c:\\users\\user\\downloads\\proyecto efsrt\\joyeria\\api_joyeria\\data\\repository\\pedidorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{53047D03-B18F-4284-9C7A-B2B02A7D8075}|api_joyeria\\api_joyeria.csproj|solutionrelative:api_joyeria\\data\\repository\\pedidorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{53047D03-B18F-4284-9C7A-B2B02A7D8075}|api_joyeria\\api_joyeria.csproj|c:\\users\\user\\downloads\\proyecto efsrt\\joyeria\\api_joyeria\\data\\repository\\detallepedidorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{53047D03-B18F-4284-9C7A-B2B02A7D8075}|api_joyeria\\api_joyeria.csproj|solutionrelative:api_joyeria\\data\\repository\\detallepedidorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{53047D03-B18F-4284-9C7A-B2B02A7D8075}|api_joyeria\\api_joyeria.csproj|c:\\users\\user\\downloads\\proyecto efsrt\\joyeria\\api_joyeria\\data\\repository\\clienterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{53047D03-B18F-4284-9C7A-B2B02A7D8075}|api_joyeria\\api_joyeria.csproj|solutionrelative:api_joyeria\\data\\repository\\clienterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{53047D03-B18F-4284-9C7A-B2B02A7D8075}|api_joyeria\\api_joyeria.csproj|c:\\users\\user\\downloads\\proyecto efsrt\\joyeria\\api_joyeria\\data\\repository\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{53047D03-B18F-4284-9C7A-B2B02A7D8075}|api_joyeria\\api_joyeria.csproj|solutionrelative:api_joyeria\\data\\repository\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{53047D03-B18F-4284-9C7A-B2B02A7D8075}|api_joyeria\\api_joyeria.csproj|c:\\users\\user\\downloads\\proyecto efsrt\\joyeria\\api_joyeria\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{53047D03-B18F-4284-9C7A-B2B02A7D8075}|api_joyeria\\api_joyeria.csproj|solutionrelative:api_joyeria\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{53047D03-B18F-4284-9C7A-B2B02A7D8075}|api_joyeria\\api_joyeria.csproj|c:\\users\\user\\downloads\\proyecto efsrt\\joyeria\\api_joyeria\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{53047D03-B18F-4284-9C7A-B2B02A7D8075}|api_joyeria\\api_joyeria.csproj|solutionrelative:api_joyeria\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{53047D03-B18F-4284-9C7A-B2B02A7D8075}|api_joyeria\\api_joyeria.csproj|c:\\users\\user\\downloads\\proyecto efsrt\\joyeria\\api_joyeria\\data\\service\\pedidoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{53047D03-B18F-4284-9C7A-B2B02A7D8075}|api_joyeria\\api_joyeria.csproj|d:\\efsrt 4\\apinueva\\api_joyeria\\api_joyeria\\data\\service\\pedidoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{53047D03-B18F-4284-9C7A-B2B02A7D8075}|api_joyeria\\api_joyeria.csproj|solutionrelative:api_joyeria\\data\\service\\pedidoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{53047D03-B18F-4284-9C7A-B2B02A7D8075}|api_joyeria\\api_joyeria.csproj|c:\\users\\user\\downloads\\proyecto efsrt\\joyeria\\api_joyeria\\controllers\\productocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{53047D03-B18F-4284-9C7A-B2B02A7D8075}|api_joyeria\\api_joyeria.csproj|solutionrelative:api_joyeria\\controllers\\productocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{53047D03-B18F-4284-9C7A-B2B02A7D8075}|api_joyeria\\api_joyeria.csproj|d:\\efsrt 4\\apinueva\\api_joyeria\\api_joyeria\\data\\validators\\pedidorequestvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53047D03-B18F-4284-9C7A-B2B02A7D8075}|api_joyeria\\api_joyeria.csproj|solutionrelative:api_joyeria\\data\\validators\\pedidorequestvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{53047D03-B18F-4284-9C7A-B2B02A7D8075}|api_joyeria\\api_joyeria.csproj|c:\\users\\user\\downloads\\proyecto efsrt\\joyeria\\api_joyeria\\dtos\\shared\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{53047D03-B18F-4284-9C7A-B2B02A7D8075}|api_joyeria\\api_joyeria.csproj|solutionrelative:api_joyeria\\dtos\\shared\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{53047D03-B18F-4284-9C7A-B2B02A7D8075}|api_joyeria\\api_joyeria.csproj|c:\\users\\user\\downloads\\proyecto efsrt\\joyeria\\api_joyeria\\dtos\\shared\\paginacionresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{53047D03-B18F-4284-9C7A-B2B02A7D8075}|api_joyeria\\api_joyeria.csproj|solutionrelative:api_joyeria\\dtos\\shared\\paginacionresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{53047D03-B18F-4284-9C7A-B2B02A7D8075}|api_joyeria\\api_joyeria.csproj|c:\\users\\user\\downloads\\proyecto efsrt\\joyeria\\api_joyeria\\dtos\\responses\\productoresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{53047D03-B18F-4284-9C7A-B2B02A7D8075}|api_joyeria\\api_joyeria.csproj|solutionrelative:api_joyeria\\dtos\\responses\\productoresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{53047D03-B18F-4284-9C7A-B2B02A7D8075}|api_joyeria\\api_joyeria.csproj|c:\\users\\user\\downloads\\proyecto efsrt\\joyeria\\api_joyeria\\dtos\\requests\\productorequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{53047D03-B18F-4284-9C7A-B2B02A7D8075}|api_joyeria\\api_joyeria.csproj|solutionrelative:api_joyeria\\dtos\\requests\\productorequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{53047D03-B18F-4284-9C7A-B2B02A7D8075}|api_joyeria\\api_joyeria.csproj|c:\\users\\user\\downloads\\proyecto efsrt\\joyeria\\api_joyeria\\dtos\\requests\\pedidorequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{53047D03-B18F-4284-9C7A-B2B02A7D8075}|api_joyeria\\api_joyeria.csproj|d:\\efsrt 4\\apinueva\\api_joyeria\\api_joyeria\\dtos\\requests\\pedidorequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{53047D03-B18F-4284-9C7A-B2B02A7D8075}|api_joyeria\\api_joyeria.csproj|solutionrelative:api_joyeria\\dtos\\requests\\pedidorequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{53047D03-B18F-4284-9C7A-B2B02A7D8075}|api_joyeria\\api_joyeria.csproj|c:\\users\\user\\downloads\\proyecto efsrt\\joyeria\\api_joyeria\\data\\validators\\productorequestvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{53047D03-B18F-4284-9C7A-B2B02A7D8075}|api_joyeria\\api_joyeria.csproj|solutionrelative:api_joyeria\\data\\validators\\productorequestvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{53047D03-B18F-4284-9C7A-B2B02A7D8075}|api_joyeria\\api_joyeria.csproj|d:\\efsrt 4\\apinueva\\api_joyeria\\api_joyeria\\data\\iservice\\iproductoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53047D03-B18F-4284-9C7A-B2B02A7D8075}|api_joyeria\\api_joyeria.csproj|solutionrelative:api_joyeria\\data\\iservice\\iproductoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{53047D03-B18F-4284-9C7A-B2B02A7D8075}|api_joyeria\\api_joyeria.csproj|c:\\users\\user\\downloads\\proyecto efsrt\\joyeria\\api_joyeria\\data\\service\\detallepedidoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{53047D03-B18F-4284-9C7A-B2B02A7D8075}|api_joyeria\\api_joyeria.csproj|solutionrelative:api_joyeria\\data\\service\\detallepedidoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{53047D03-B18F-4284-9C7A-B2B02A7D8075}|api_joyeria\\api_joyeria.csproj|d:\\efsrt 4\\apinueva\\api_joyeria\\api_joyeria\\controllers\\pedidocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53047D03-B18F-4284-9C7A-B2B02A7D8075}|api_joyeria\\api_joyeria.csproj|solutionrelative:api_joyeria\\controllers\\pedidocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{53047D03-B18F-4284-9C7A-B2B02A7D8075}|api_joyeria\\api_joyeria.csproj|c:\\users\\user\\downloads\\proyecto efsrt\\joyeria\\api_joyeria\\data\\middleware\\loggingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{53047D03-B18F-4284-9C7A-B2B02A7D8075}|api_joyeria\\api_joyeria.csproj|solutionrelative:api_joyeria\\data\\middleware\\loggingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{53047D03-B18F-4284-9C7A-B2B02A7D8075}|api_joyeria\\api_joyeria.csproj|c:\\users\\user\\downloads\\proyecto efsrt\\joyeria\\api_joyeria\\data\\iservice\\ipedidoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{53047D03-B18F-4284-9C7A-B2B02A7D8075}|api_joyeria\\api_joyeria.csproj|d:\\efsrt 4\\apinueva\\api_joyeria\\api_joyeria\\data\\iservice\\ipedidoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{53047D03-B18F-4284-9C7A-B2B02A7D8075}|api_joyeria\\api_joyeria.csproj|solutionrelative:api_joyeria\\data\\iservice\\ipedidoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53047D03-B18F-4284-9C7A-B2B02A7D8075}|api_joyeria\\api_joyeria.csproj|d:\\efsrt 4\\apinueva\\api_joyeria\\api_joyeria\\data\\irepository\\ipedidorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53047D03-B18F-4284-9C7A-B2B02A7D8075}|api_joyeria\\api_joyeria.csproj|solutionrelative:api_joyeria\\data\\irepository\\ipedidorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53047D03-B18F-4284-9C7A-B2B02A7D8075}|api_joyeria\\api_joyeria.csproj|d:\\efsrt 4\\apinueva\\api_joyeria\\api_joyeria\\dtos\\responses\\clienteresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53047D03-B18F-4284-9C7A-B2B02A7D8075}|api_joyeria\\api_joyeria.csproj|solutionrelative:api_joyeria\\dtos\\responses\\clienteresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53047D03-B18F-4284-9C7A-B2B02A7D8075}|api_joyeria\\api_joyeria.csproj|d:\\efsrt 4\\apinueva\\api_joyeria\\api_joyeria\\data\\repository\\pedidorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53047D03-B18F-4284-9C7A-B2B02A7D8075}|api_joyeria\\api_joyeria.csproj|solutionrelative:api_joyeria\\data\\repository\\pedidorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
-      "VerticalTabListWidth": 134,
+      "VerticalTabListWidth": 165,
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "PedidoRepository.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Downloads\\Proyecto EFSRT\\Joyeria\\api_joyeria\\Data\\Repository\\PedidoRepository.cs",
-              "RelativeDocumentMoniker": "api_joyeria\\Data\\Repository\\PedidoRepository.cs",
-              "ToolTip": "C:\\Users\\User\\Downloads\\Proyecto EFSRT\\Joyeria\\api_joyeria\\Data\\Repository\\PedidoRepository.cs",
-              "RelativeToolTip": "api_joyeria\\Data\\Repository\\PedidoRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T20:19:31.557Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "DetallePedidoRepository.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Downloads\\Proyecto EFSRT\\Joyeria\\api_joyeria\\Data\\Repository\\DetallePedidoRepository.cs",
-              "RelativeDocumentMoniker": "api_joyeria\\Data\\Repository\\DetallePedidoRepository.cs",
-              "ToolTip": "C:\\Users\\User\\Downloads\\Proyecto EFSRT\\Joyeria\\api_joyeria\\Data\\Repository\\DetallePedidoRepository.cs",
-              "RelativeToolTip": "api_joyeria\\Data\\Repository\\DetallePedidoRepository.cs",
+              "DocumentIndex": 2,
+              "Title": "PedidoRequestValidator.cs",
+              "DocumentMoniker": "D:\\EFSRT 4\\apiNueva\\api_joyeria\\api_joyeria\\Data\\Validators\\PedidoRequestValidator.cs",
+              "RelativeDocumentMoniker": "api_joyeria\\Data\\Validators\\PedidoRequestValidator.cs",
+              "ToolTip": "D:\\EFSRT 4\\apiNueva\\api_joyeria\\api_joyeria\\Data\\Validators\\PedidoRequestValidator.cs",
+              "RelativeToolTip": "api_joyeria\\Data\\Validators\\PedidoRequestValidator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T20:19:30.295Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Downloads\\Proyecto EFSRT\\Joyeria\\api_joyeria\\Program.cs",
-              "RelativeDocumentMoniker": "api_joyeria\\Program.cs",
-              "ToolTip": "C:\\Users\\User\\Downloads\\Proyecto EFSRT\\Joyeria\\api_joyeria\\Program.cs",
-              "RelativeToolTip": "api_joyeria\\Program.cs",
-              "ViewState": "AgIAAK4AAAAAAAAAAAApwMMAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-18T22:07:36.434Z",
+              "WhenOpened": "2025-10-24T14:16:30.662Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "ProductoRepository.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Downloads\\Proyecto EFSRT\\Joyeria\\api_joyeria\\Data\\Repository\\ProductoRepository.cs",
-              "RelativeDocumentMoniker": "api_joyeria\\Data\\Repository\\ProductoRepository.cs",
-              "ToolTip": "C:\\Users\\User\\Downloads\\Proyecto EFSRT\\Joyeria\\api_joyeria\\Data\\Repository\\ProductoRepository.cs",
-              "RelativeToolTip": "api_joyeria\\Data\\Repository\\ProductoRepository.cs",
+              "Title": "PedidoRequest.cs",
+              "DocumentMoniker": "D:\\EFSRT 4\\apiNueva\\api_joyeria\\api_joyeria\\DTOs\\Requests\\PedidoRequest.cs",
+              "RelativeDocumentMoniker": "api_joyeria\\DTOs\\Requests\\PedidoRequest.cs",
+              "ToolTip": "D:\\EFSRT 4\\apiNueva\\api_joyeria\\api_joyeria\\DTOs\\Requests\\PedidoRequest.cs",
+              "RelativeToolTip": "api_joyeria\\DTOs\\Requests\\PedidoRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T20:19:33.237Z",
+              "WhenOpened": "2025-10-24T14:16:28.079Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ClienteRepository.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Downloads\\Proyecto EFSRT\\Joyeria\\api_joyeria\\Data\\Repository\\ClienteRepository.cs",
-              "RelativeDocumentMoniker": "api_joyeria\\Data\\Repository\\ClienteRepository.cs",
-              "ToolTip": "C:\\Users\\User\\Downloads\\Proyecto EFSRT\\Joyeria\\api_joyeria\\Data\\Repository\\ClienteRepository.cs",
-              "RelativeToolTip": "api_joyeria\\Data\\Repository\\ClienteRepository.cs",
+              "DocumentIndex": 0,
+              "Title": "PedidoResponse.cs",
+              "DocumentMoniker": "D:\\EFSRT 4\\apiNueva\\api_joyeria\\api_joyeria\\DTOs\\Responses\\PedidoResponse.cs",
+              "RelativeDocumentMoniker": "api_joyeria\\DTOs\\Responses\\PedidoResponse.cs",
+              "ToolTip": "D:\\EFSRT 4\\apiNueva\\api_joyeria\\api_joyeria\\DTOs\\Responses\\PedidoResponse.cs",
+              "RelativeToolTip": "api_joyeria\\DTOs\\Responses\\PedidoResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T14:16:23.751Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ClienteResponse.cs",
+              "DocumentMoniker": "D:\\EFSRT 4\\apiNueva\\api_joyeria\\api_joyeria\\DTOs\\Responses\\ClienteResponse.cs",
+              "RelativeDocumentMoniker": "api_joyeria\\DTOs\\Responses\\ClienteResponse.cs",
+              "ToolTip": "D:\\EFSRT 4\\apiNueva\\api_joyeria\\api_joyeria\\DTOs\\Responses\\ClienteResponse.cs",
+              "RelativeToolTip": "api_joyeria\\DTOs\\Responses\\ClienteResponse.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T20:19:29.237Z",
+              "WhenOpened": "2025-10-24T13:52:22.307Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IProductoService.cs",
+              "DocumentMoniker": "D:\\EFSRT 4\\apiNueva\\api_joyeria\\api_joyeria\\Data\\IService\\IProductoService.cs",
+              "RelativeDocumentMoniker": "api_joyeria\\Data\\IService\\IProductoService.cs",
+              "ToolTip": "D:\\EFSRT 4\\apiNueva\\api_joyeria\\api_joyeria\\Data\\IService\\IProductoService.cs",
+              "RelativeToolTip": "api_joyeria\\Data\\IService\\IProductoService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T13:49:43.026Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PedidoService.cs",
+              "DocumentMoniker": "D:\\EFSRT 4\\apiNueva\\api_joyeria\\api_joyeria\\Data\\Service\\PedidoService.cs",
+              "RelativeDocumentMoniker": "api_joyeria\\Data\\Service\\PedidoService.cs",
+              "ToolTip": "D:\\EFSRT 4\\apiNueva\\api_joyeria\\api_joyeria\\Data\\Service\\PedidoService.cs",
+              "RelativeToolTip": "api_joyeria\\Data\\Service\\PedidoService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAF8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T06:44:13.587Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "BaseRepository.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Downloads\\Proyecto EFSRT\\Joyeria\\api_joyeria\\Data\\Repository\\BaseRepository.cs",
-              "RelativeDocumentMoniker": "api_joyeria\\Data\\Repository\\BaseRepository.cs",
-              "ToolTip": "C:\\Users\\User\\Downloads\\Proyecto EFSRT\\Joyeria\\api_joyeria\\Data\\Repository\\BaseRepository.cs",
-              "RelativeToolTip": "api_joyeria\\Data\\Repository\\BaseRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAbAAAAAAAAAA==",
+              "Title": "IPedidoRepository.cs",
+              "DocumentMoniker": "D:\\EFSRT 4\\apiNueva\\api_joyeria\\api_joyeria\\Data\\IRepository\\IPedidoRepository.cs",
+              "RelativeDocumentMoniker": "api_joyeria\\Data\\IRepository\\IPedidoRepository.cs",
+              "ToolTip": "D:\\EFSRT 4\\apiNueva\\api_joyeria\\api_joyeria\\Data\\IRepository\\IPedidoRepository.cs",
+              "RelativeToolTip": "api_joyeria\\Data\\IRepository\\IPedidoRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T20:18:32.974Z",
+              "WhenOpened": "2025-10-24T06:44:07.027Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "ProductoRequest.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Downloads\\Proyecto EFSRT\\Joyeria\\api_joyeria\\DTOs\\Requests\\ProductoRequest.cs",
-              "RelativeDocumentMoniker": "api_joyeria\\DTOs\\Requests\\ProductoRequest.cs",
-              "ToolTip": "C:\\Users\\User\\Downloads\\Proyecto EFSRT\\Joyeria\\api_joyeria\\DTOs\\Requests\\ProductoRequest.cs",
-              "RelativeToolTip": "api_joyeria\\DTOs\\Requests\\ProductoRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA9AAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "IPedidoService.cs",
+              "DocumentMoniker": "D:\\EFSRT 4\\apiNueva\\api_joyeria\\api_joyeria\\Data\\IService\\IPedidoService.cs",
+              "RelativeDocumentMoniker": "api_joyeria\\Data\\IService\\IPedidoService.cs",
+              "ToolTip": "D:\\EFSRT 4\\apiNueva\\api_joyeria\\api_joyeria\\Data\\IService\\IPedidoService.cs",
+              "RelativeToolTip": "api_joyeria\\Data\\IService\\IPedidoService.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAcwAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-18T22:27:47.427Z"
+              "WhenOpened": "2025-10-24T06:43:40.428Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "PedidoService.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Downloads\\Proyecto EFSRT\\Joyeria\\api_joyeria\\Data\\Service\\PedidoService.cs",
-              "RelativeDocumentMoniker": "api_joyeria\\Data\\Service\\PedidoService.cs",
-              "ToolTip": "C:\\Users\\User\\Downloads\\Proyecto EFSRT\\Joyeria\\api_joyeria\\Data\\Service\\PedidoService.cs",
-              "RelativeToolTip": "api_joyeria\\Data\\Service\\PedidoService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "PedidoController.cs",
+              "DocumentMoniker": "D:\\EFSRT 4\\apiNueva\\api_joyeria\\api_joyeria\\Controllers\\PedidoController.cs",
+              "RelativeDocumentMoniker": "api_joyeria\\Controllers\\PedidoController.cs",
+              "ToolTip": "D:\\EFSRT 4\\apiNueva\\api_joyeria\\api_joyeria\\Controllers\\PedidoController.cs",
+              "RelativeToolTip": "api_joyeria\\Controllers\\PedidoController.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAkwCoAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-18T22:04:42.515Z",
+              "WhenOpened": "2025-10-24T06:22:25.575Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Downloads\\Proyecto EFSRT\\Joyeria\\api_joyeria\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "api_joyeria\\Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\User\\Downloads\\Proyecto EFSRT\\Joyeria\\api_joyeria\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "api_joyeria\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAA6wDYAAAAAAAAAAAAAAA==",
+              "Title": "PedidoRepository.cs",
+              "DocumentMoniker": "D:\\EFSRT 4\\apiNueva\\api_joyeria\\api_joyeria\\Data\\Repository\\PedidoRepository.cs",
+              "RelativeDocumentMoniker": "api_joyeria\\Data\\Repository\\PedidoRepository.cs",
+              "ToolTip": "D:\\EFSRT 4\\apiNueva\\api_joyeria\\api_joyeria\\Data\\Repository\\PedidoRepository.cs",
+              "RelativeToolTip": "api_joyeria\\Data\\Repository\\PedidoRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-18T22:52:17.94Z",
+              "WhenOpened": "2025-10-24T06:22:06.423Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "PaginacionResponse.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Downloads\\Proyecto EFSRT\\Joyeria\\api_joyeria\\DTOs\\Shared\\PaginacionResponse.cs",
-              "RelativeDocumentMoniker": "api_joyeria\\DTOs\\Shared\\PaginacionResponse.cs",
-              "ToolTip": "C:\\Users\\User\\Downloads\\Proyecto EFSRT\\Joyeria\\api_joyeria\\DTOs\\Shared\\PaginacionResponse.cs",
-              "RelativeToolTip": "api_joyeria\\DTOs\\Shared\\PaginacionResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-18T22:52:32.804Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "JoyeriaDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Downloads\\Proyecto EFSRT\\Joyeria\\api_joyeria\\Data\\JoyeriaDbContext.cs",
-              "RelativeDocumentMoniker": "api_joyeria\\Data\\JoyeriaDbContext.cs",
-              "ToolTip": "C:\\Users\\User\\Downloads\\Proyecto EFSRT\\Joyeria\\api_joyeria\\Data\\JoyeriaDbContext.cs",
-              "RelativeToolTip": "api_joyeria\\Data\\JoyeriaDbContext.cs",
-              "ViewState": "AgIAAEgAAAAAAAAAAAAgwGIAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-18T22:09:14.87Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ProductoService.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Downloads\\Proyecto EFSRT\\Joyeria\\api_joyeria\\Data\\Service\\ProductoService.cs",
-              "RelativeDocumentMoniker": "api_joyeria\\Data\\Service\\ProductoService.cs",
-              "ToolTip": "C:\\Users\\User\\Downloads\\Proyecto EFSRT\\Joyeria\\api_joyeria\\Data\\Service\\ProductoService.cs",
-              "RelativeToolTip": "api_joyeria\\Data\\Service\\ProductoService.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAIwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T20:19:39.069Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "ProductoResponse.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Downloads\\Proyecto EFSRT\\Joyeria\\api_joyeria\\DTOs\\Responses\\ProductoResponse.cs",
-              "RelativeDocumentMoniker": "api_joyeria\\DTOs\\Responses\\ProductoResponse.cs",
-              "ToolTip": "C:\\Users\\User\\Downloads\\Proyecto EFSRT\\Joyeria\\api_joyeria\\DTOs\\Responses\\ProductoResponse.cs",
-              "RelativeToolTip": "api_joyeria\\DTOs\\Responses\\ProductoResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-18T22:27:51.103Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "ProductoController.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Downloads\\Proyecto EFSRT\\Joyeria\\api_joyeria\\Controllers\\ProductoController.cs",
-              "RelativeDocumentMoniker": "api_joyeria\\Controllers\\ProductoController.cs",
-              "ToolTip": "C:\\Users\\User\\Downloads\\Proyecto EFSRT\\Joyeria\\api_joyeria\\Controllers\\ProductoController.cs",
-              "RelativeToolTip": "api_joyeria\\Controllers\\ProductoController.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAIAwwDQAAABBAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-18T23:03:33.307Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "ProductoRequestValidator.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Downloads\\Proyecto EFSRT\\Joyeria\\api_joyeria\\Data\\Validators\\ProductoRequestValidator.cs",
-              "RelativeDocumentMoniker": "api_joyeria\\Data\\Validators\\ProductoRequestValidator.cs",
-              "ToolTip": "C:\\Users\\User\\Downloads\\Proyecto EFSRT\\Joyeria\\api_joyeria\\Data\\Validators\\ProductoRequestValidator.cs",
-              "RelativeToolTip": "api_joyeria\\Data\\Validators\\ProductoRequestValidator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-18T22:28:27.051Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "DetallePedidoService.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Downloads\\Proyecto EFSRT\\Joyeria\\api_joyeria\\Data\\Service\\DetallePedidoService.cs",
-              "RelativeDocumentMoniker": "api_joyeria\\Data\\Service\\DetallePedidoService.cs",
-              "ToolTip": "C:\\Users\\User\\Downloads\\Proyecto EFSRT\\Joyeria\\api_joyeria\\Data\\Service\\DetallePedidoService.cs",
-              "RelativeToolTip": "api_joyeria\\Data\\Service\\DetallePedidoService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-18T22:20:47.827Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "LoggingMiddleware.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Downloads\\Proyecto EFSRT\\Joyeria\\api_joyeria\\Data\\Middleware\\LoggingMiddleware.cs",
-              "RelativeDocumentMoniker": "api_joyeria\\Data\\Middleware\\LoggingMiddleware.cs",
-              "ToolTip": "C:\\Users\\User\\Downloads\\Proyecto EFSRT\\Joyeria\\api_joyeria\\Data\\Middleware\\LoggingMiddleware.cs",
-              "RelativeToolTip": "api_joyeria\\Data\\Middleware\\LoggingMiddleware.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAowB4AAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-18T22:10:10.499Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ClienteController.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Downloads\\Proyecto EFSRT\\Joyeria\\api_joyeria\\Controllers\\ClienteController.cs",
-              "RelativeDocumentMoniker": "api_joyeria\\Controllers\\ClienteController.cs",
-              "ToolTip": "C:\\Users\\User\\Downloads\\Proyecto EFSRT\\Joyeria\\api_joyeria\\Controllers\\ClienteController.cs",
-              "RelativeToolTip": "api_joyeria\\Controllers\\ClienteController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-18T22:57:00.6Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "PedidoRequest.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Downloads\\Proyecto EFSRT\\Joyeria\\api_joyeria\\DTOs\\Requests\\PedidoRequest.cs",
-              "RelativeDocumentMoniker": "api_joyeria\\DTOs\\Requests\\PedidoRequest.cs",
-              "ToolTip": "C:\\Users\\User\\Downloads\\Proyecto EFSRT\\Joyeria\\api_joyeria\\DTOs\\Requests\\PedidoRequest.cs",
-              "RelativeToolTip": "api_joyeria\\DTOs\\Requests\\PedidoRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-18T22:28:12.859Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ApiResponse.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Downloads\\Proyecto EFSRT\\Joyeria\\api_joyeria\\DTOs\\Shared\\ApiResponse.cs",
-              "RelativeDocumentMoniker": "api_joyeria\\DTOs\\Shared\\ApiResponse.cs",
-              "ToolTip": "C:\\Users\\User\\Downloads\\Proyecto EFSRT\\Joyeria\\api_joyeria\\DTOs\\Shared\\ApiResponse.cs",
-              "RelativeToolTip": "api_joyeria\\DTOs\\Shared\\ApiResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-18T23:05:41.814Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "IPedidoService.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Downloads\\Proyecto EFSRT\\Joyeria\\api_joyeria\\Data\\IService\\IPedidoService.cs",
-              "RelativeDocumentMoniker": "api_joyeria\\Data\\IService\\IPedidoService.cs",
-              "ToolTip": "C:\\Users\\User\\Downloads\\Proyecto EFSRT\\Joyeria\\api_joyeria\\Data\\IService\\IPedidoService.cs",
-              "RelativeToolTip": "api_joyeria\\Data\\IService\\IPedidoService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-18T22:07:20.488Z"
             }
           ]
         }

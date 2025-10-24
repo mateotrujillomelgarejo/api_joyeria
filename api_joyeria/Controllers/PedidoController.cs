@@ -2,6 +2,7 @@
 using api_joyeria.Data.IService;
 using api_joyeria.DTOs.Requests;
 using api_joyeria.DTOs.Shared;
+using api_joyeria.Data.Repository;
 
 namespace api_joyeria.Controllers
 {
@@ -10,12 +11,15 @@ namespace api_joyeria.Controllers
     public class PedidoController : ControllerBase
     {
         private readonly IPedidoService _service;
+        
 
         public PedidoController(IPedidoService service)
         {
             _service = service;
+            
         }
 
+        //aca lo cambie mira
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {

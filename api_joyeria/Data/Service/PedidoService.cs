@@ -94,8 +94,9 @@ namespace api_joyeria.Data.Service
 
         public async Task<IEnumerable<PedidoResponse>> GetAllAsync()
         {
-            var pedidos = await _pedidoRepo.GetAllWithRelationsAsync();
+           var pedidos = await _pedidoRepo.GetAllWithRelationsAsync();
             return _mapper.Map<IEnumerable<PedidoResponse>>(pedidos);
+           // return await _pedidoRepo.GetAllWithRelationsAsync();
         }
 
         public async Task<PedidoResponse?> GetByIdAsync(int id)
