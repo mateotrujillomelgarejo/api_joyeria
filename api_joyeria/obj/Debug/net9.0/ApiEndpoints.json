@@ -1,40 +1,8 @@
 [
   {
-    "ContainingType": "api_joyeria.Controllers.AuthController",
-    "Method": "Login",
-    "RelativePath": "api/Auth/login",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "request",
-        "Type": "api_joyeria.DTOs.Requests.LoginRequest",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "api_joyeria.Controllers.AuthController",
-    "Method": "Register",
-    "RelativePath": "api/Auth/register",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "request",
-        "Type": "api_joyeria.DTOs.Requests.ClienteRequest",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
     "ContainingType": "api_joyeria.Controllers.ClienteController",
     "Method": "GetAll",
-    "RelativePath": "api/Cliente",
+    "RelativePath": "api/clientes",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -44,7 +12,7 @@
   {
     "ContainingType": "api_joyeria.Controllers.ClienteController",
     "Method": "GetById",
-    "RelativePath": "api/Cliente/{id}",
+    "RelativePath": "api/clientes/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -60,7 +28,7 @@
   {
     "ContainingType": "api_joyeria.Controllers.ClienteController",
     "Method": "Update",
-    "RelativePath": "api/Cliente/{id}",
+    "RelativePath": "api/clientes/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -81,7 +49,7 @@
   {
     "ContainingType": "api_joyeria.Controllers.ClienteController",
     "Method": "Delete",
-    "RelativePath": "api/Cliente/{id}",
+    "RelativePath": "api/clientes/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -89,6 +57,38 @@
       {
         "Name": "id",
         "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "api_joyeria.Controllers.AuthController",
+    "Method": "Login",
+    "RelativePath": "api/clientes/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "api_joyeria.DTOs.Requests.LoginRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "api_joyeria.Controllers.AuthController",
+    "Method": "Register",
+    "RelativePath": "api/clientes/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "api_joyeria.DTOs.Requests.ClienteRequest",
         "IsRequired": true
       }
     ],
@@ -127,9 +127,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "api_joyeria.Controllers.PedidoController",
+    "ContainingType": "api_joyeria.Controllers.PedidosController",
     "Method": "GetAll",
-    "RelativePath": "api/Pedido",
+    "RelativePath": "api/Pedidos",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -137,9 +137,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "api_joyeria.Controllers.PedidoController",
+    "ContainingType": "api_joyeria.Controllers.PedidosController",
     "Method": "Create",
-    "RelativePath": "api/Pedido",
+    "RelativePath": "api/Pedidos",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -153,9 +153,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "api_joyeria.Controllers.PedidoController",
+    "ContainingType": "api_joyeria.Controllers.PedidosController",
     "Method": "GetById",
-    "RelativePath": "api/Pedido/{id}",
+    "RelativePath": "api/Pedidos/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -171,7 +171,7 @@
   {
     "ContainingType": "api_joyeria.Controllers.ProductoController",
     "Method": "GetAll",
-    "RelativePath": "api/Producto",
+    "RelativePath": "api/productos",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -181,7 +181,7 @@
   {
     "ContainingType": "api_joyeria.Controllers.ProductoController",
     "Method": "Create",
-    "RelativePath": "api/Producto",
+    "RelativePath": "api/productos",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -197,7 +197,7 @@
   {
     "ContainingType": "api_joyeria.Controllers.ProductoController",
     "Method": "GetById",
-    "RelativePath": "api/Producto/{id}",
+    "RelativePath": "api/productos/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -213,7 +213,7 @@
   {
     "ContainingType": "api_joyeria.Controllers.ProductoController",
     "Method": "Update",
-    "RelativePath": "api/Producto/{id}",
+    "RelativePath": "api/productos/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -234,7 +234,7 @@
   {
     "ContainingType": "api_joyeria.Controllers.ProductoController",
     "Method": "Delete",
-    "RelativePath": "api/Producto/{id}",
+    "RelativePath": "api/productos/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,

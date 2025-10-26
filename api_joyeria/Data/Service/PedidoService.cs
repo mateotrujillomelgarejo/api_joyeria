@@ -4,7 +4,6 @@ using api_joyeria.Data.IService;
 using api_joyeria.DTOs.Requests;
 using api_joyeria.DTOs.Responses;
 using api_joyeria.Models;
-using api_joyeria.Data;
 
 namespace api_joyeria.Data.Service
 {
@@ -73,6 +72,8 @@ namespace api_joyeria.Data.Service
                         FechaPedido = DateTime.Now,
                         Total = total,
                         Estado = "Pendiente",
+                        DireccionEnvio = request.DireccionEnvio,
+                        Observaciones = request.Observaciones,
                         Detalles = detalles
                     };
 
@@ -103,6 +104,15 @@ namespace api_joyeria.Data.Service
         {
             var pedido = await _pedidoRepo.GetByIdWithRelationsAsync(id);
             return pedido == null ? null : _mapper.Map<PedidoResponse>(pedido);
+        }
+        public async Task<bool> CambiarEstadoAsync(int id, string nuevoEstado)
+        {
+            var pedido = await _pedidoRepo.GetByIdAsync(id);
+            if (pedido == null) return false;
+            pedido.Estado = nuevoEstado;
+            await _pedidoRepo.UpdateAsync(pedido);
+            await _pedidoRepo.SaveAsync();
+            return true;
         }
 
     }

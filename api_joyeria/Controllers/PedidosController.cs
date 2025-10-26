@@ -6,17 +6,17 @@ using api_joyeria.Data.Repository;
 
 namespace api_joyeria.Controllers
 {
-    [ApiController]
     [Route("api/[controller]")]
-    public class PedidoController : ControllerBase
+    [ApiController]
+    public class PedidosController : ControllerBase
     {
         private readonly IPedidoService _service;
-        
 
-        public PedidoController(IPedidoService service)
+
+        public PedidosController(IPedidoService service)
         {
             _service = service;
-            
+
         }
 
         //aca lo cambie mira
@@ -40,15 +40,24 @@ namespace api_joyeria.Controllers
         [HttpPost]
         public async Task<IActionResult> Create([FromBody] PedidoRequest request)
         {
-            try
-            {
-                var nuevo = await _service.CreateAsync(request);
-                return Ok(nuevo);
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.Message);
-            }
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
+            var nuevo = await _service.CreateAsync(request);
+
+            return CreatedAtAction(nameof(GetById), new { id = nuevo.Id }, nuevo);
+        }
+
+        [HttpPatch("{id}/estado")]
+        async Task<IActionResult> CambiarEstado(int id, [FromBody] EstadoRequest req)
+        {
+            if (string.IsNullOrWhiteSpace(req?.Estado))
+                return BadRequest("Estado inválido.");
+
+            // asumo que el servicio expone CambiarEstadoAsync
+            var ok = await _service.CambiarEstadoAsync(id, req.Estado);
+            if (!ok) return NotFound($"Pedido {id} no encontrado o no se pudo actualizar.");
+            return NoContent();
         }
     }
 }

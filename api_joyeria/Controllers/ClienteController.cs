@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace api_joyeria.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("api/clientes")]
     public class ClienteController : ControllerBase
     {
         private readonly IClienteService _service;
@@ -22,34 +22,28 @@ namespace api_joyeria.Controllers
             return Ok(clientes);
         }
 
-        [HttpGet("{id}")]
+        [HttpGet("{id:int}")]
         public async Task<IActionResult> GetById(int id)
         {
             var cliente = await _service.GetByIdAsync(id);
-            if (cliente == null)
-                return NotFound("Cliente no encontrado");
-
-            return Ok(cliente);
+            if (cliente == null) return NotFound(new { Success = false, Message = "Cliente no encontrado" });
+            return Ok(new { Success = true, Data = cliente });
         }
 
-        [HttpPut("{id}")]
+        [HttpPut("{id:int}")]
         public async Task<IActionResult> Update(int id, [FromBody] ClienteRequest request)
         {
             var actualizado = await _service.UpdateAsync(id, request);
-            if (actualizado == null)
-                return NotFound("Cliente no encontrado");
-
-            return Ok(actualizado);
+            if (actualizado == null) return NotFound(new { Success = false, Message = "Cliente no encontrado" });
+            return Ok(new { Success = true, Data = actualizado });
         }
 
-        [HttpDelete("{id}")]
+        [HttpDelete("{id:int}")]
         public async Task<IActionResult> Delete(int id)
         {
             var ok = await _service.DeleteAsync(id);
-            if (!ok)
-                return NotFound("Cliente no encontrado");
-
-            return Ok("Cliente eliminado correctamente");
+            if (!ok) return NotFound(new { Success = false, Message = "Cliente no encontrado" });
+            return Ok(new { Success = true, Message = "Cliente eliminado correctamente" });
         }
     }
 }

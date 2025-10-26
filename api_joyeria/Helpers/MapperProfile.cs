@@ -20,11 +20,11 @@ namespace api_joyeria.Helpers
             // Pedido y DetallePedido
             CreateMap<Pedido, PedidoResponse>()
                 .ForMember(dest => dest.ClienteNombre, opt => opt.MapFrom(src => src.Cliente != null ? src.Cliente.Nombre : string.Empty))
-                .ForMember(dest => dest.Fecha, opt => opt.MapFrom(src => src.FechaPedido));
+                .ForMember(dest => dest.ClienteEmail, opt => opt.MapFrom(src => src.Cliente.Email))
+                .ForMember(dest => dest.FechaPedido, opt => opt.MapFrom(src => src.FechaPedido));
 
             CreateMap<DetallePedido, DetallePedidoResponse>()
-                .ForMember(dest => dest.NombreProducto, opt => opt.MapFrom(src => src.Producto.Nombre))
-                .ForMember(dest => dest.Subtotal, opt => opt.MapFrom(src => src.Cantidad * src.PrecioUnitario));
+                .ForMember(dest => dest.NombreProducto, opt => opt.MapFrom(src => src.Producto.Nombre));
         }
     }
 }

@@ -5,7 +5,7 @@
     "version": "v1"
   },
   "paths": {
-    "/api/Auth/login": {
+    "/api/clientes/login": {
       "post": {
         "tags": [
           "Auth"
@@ -36,7 +36,7 @@
         }
       }
     },
-    "/api/Auth/register": {
+    "/api/clientes/register": {
       "post": {
         "tags": [
           "Auth"
@@ -67,7 +67,7 @@
         }
       }
     },
-    "/api/Cliente": {
+    "/api/clientes": {
       "get": {
         "tags": [
           "Cliente"
@@ -79,7 +79,7 @@
         }
       }
     },
-    "/api/Cliente/{id}": {
+    "/api/clientes/{id}": {
       "get": {
         "tags": [
           "Cliente"
@@ -217,10 +217,10 @@
         }
       }
     },
-    "/api/Pedido": {
+    "/api/Pedidos": {
       "get": {
         "tags": [
-          "Pedido"
+          "Pedidos"
         ],
         "responses": {
           "200": {
@@ -230,7 +230,7 @@
       },
       "post": {
         "tags": [
-          "Pedido"
+          "Pedidos"
         ],
         "requestBody": {
           "content": {
@@ -258,10 +258,10 @@
         }
       }
     },
-    "/api/Pedido/{id}": {
+    "/api/Pedidos/{id}": {
       "get": {
         "tags": [
-          "Pedido"
+          "Pedidos"
         ],
         "parameters": [
           {
@@ -281,7 +281,7 @@
         }
       }
     },
-    "/api/Producto": {
+    "/api/productos": {
       "get": {
         "tags": [
           "Producto"
@@ -322,7 +322,7 @@
         }
       }
     },
-    "/api/Producto/{id}": {
+    "/api/productos/{id}": {
       "get": {
         "tags": [
           "Producto"
@@ -594,6 +594,14 @@
               "type": "integer",
               "format": "int32"
             },
+            "nullable": true
+          },
+          "direccionEnvio": {
+            "type": "string",
+            "nullable": true
+          },
+          "observaciones": {
+            "type": "string",
             "nullable": true
           }
         },

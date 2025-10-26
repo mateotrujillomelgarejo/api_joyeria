@@ -1,13 +1,13 @@
 ﻿using api_joyeria.Data.IService;
 using api_joyeria.DTOs.Requests;
-using api_joyeria.DTOs.Shared;
+using api_joyeria.DTOs.Responses; // si lo tienes, o crea ApiResponse / LoginResponse en API
 using api_joyeria.Helpers;
 using Microsoft.AspNetCore.Mvc;
 
 namespace api_joyeria.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("api/clientes/")]
     public class AuthController : ControllerBase
     {
         private readonly IClienteService _clienteService;
@@ -22,18 +22,34 @@ namespace api_joyeria.Controllers
         [HttpPost("login")]
         public async Task<IActionResult> Login([FromBody] LoginRequest request)
         {
-            var cliente = await _clienteService.ValidateCredentialsAsync(request.Email, request.Password);
-            if (cliente == null)
-                return Unauthorized("Credenciales inválidas");
+            var clienteResp = await _clienteService.ValidateCredentialsAsync(request.Email, request.Password);
+            if (clienteResp == null)
+                return Unauthorized(new { message = "Credenciales inválidas" });
 
-            var token = _jwtHelper.GenerateToken(new Models.Cliente
+            var clienteParaToken = new api_joyeria.Models.Cliente
             {
-                Id = cliente.Id,
-                Email = cliente.Email,
-                Nombre = cliente.Nombre
-            });
+                Id = clienteResp.Id,
+                Email = clienteResp.Email,
+                Nombre = clienteResp.Nombre,
+                EsAdmin = clienteResp.EsAdmin
+            };
 
-            return Ok(new{token, cliente});
+            var token = _jwtHelper.GenerateToken(clienteParaToken);
+
+            var loginResponse = new
+            {
+                Token = token,
+                Cliente = clienteResp
+            };
+
+            var wrapper = new
+            {
+                Success = true,
+                Message = "Login exitoso",
+                Data = loginResponse
+            };
+
+            return Ok(wrapper);
         }
 
         [HttpPost("register")]
@@ -42,13 +58,12 @@ namespace api_joyeria.Controllers
             try
             {
                 var nuevo = await _clienteService.RegisterAsync(request);
-                return Ok(nuevo);
+                return Ok(new { Success = true, Data = nuevo });
             }
             catch (Exception ex)
             {
-                return BadRequest(ex.Message);
+                return BadRequest(new { Success = false, Message = ex.Message });
             }
         }
-
     }
 }

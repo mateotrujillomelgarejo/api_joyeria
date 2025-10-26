@@ -6,5 +6,6 @@ namespace api_joyeria.Data.IRepository
     {
         Task<IEnumerable<Pedido>> GetAllWithRelationsAsync();
         Task<Pedido?> GetByIdWithRelationsAsync(int id);
+        Task UpdateAsync(Pedido pedido);
     }
 }

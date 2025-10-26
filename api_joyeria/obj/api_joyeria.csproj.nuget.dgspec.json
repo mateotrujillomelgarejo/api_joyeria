@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\EFSRT 4\\apiNueva\\api_joyeria\\api_joyeria\\api_joyeria.csproj": {}
+    "C:\\Users\\User\\Downloads\\Proyecto EFSRT\\Joyeria\\api_joyeria\\api_joyeria.csproj": {}
   },
   "projects": {
-    "D:\\EFSRT 4\\apiNueva\\api_joyeria\\api_joyeria\\api_joyeria.csproj": {
+    "C:\\Users\\User\\Downloads\\Proyecto EFSRT\\Joyeria\\api_joyeria\\api_joyeria.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\EFSRT 4\\apiNueva\\api_joyeria\\api_joyeria\\api_joyeria.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Downloads\\Proyecto EFSRT\\Joyeria\\api_joyeria\\api_joyeria.csproj",
         "projectName": "api_joyeria",
-        "projectPath": "D:\\EFSRT 4\\apiNueva\\api_joyeria\\api_joyeria\\api_joyeria.csproj",
-        "packagesPath": "C:\\Users\\Josue\\.nuget\\packages\\",
-        "outputPath": "D:\\EFSRT 4\\apiNueva\\api_joyeria\\api_joyeria\\obj\\",
+        "projectPath": "C:\\Users\\User\\Downloads\\Proyecto EFSRT\\Joyeria\\api_joyeria\\api_joyeria.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\Downloads\\Proyecto EFSRT\\Joyeria\\api_joyeria\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Josue\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -44,7 +44,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net9.0": {
@@ -104,7 +104,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
